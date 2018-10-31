@@ -1,0 +1,50 @@
+{
+  "name": "dist-two-points",
+  "version": "1.0.0",
+  "description": "A JavaScript utility for finding the distance between two points given latitude and longitude",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhfen/dist-two-points.git"
+  },
+  "keywords": [
+    "latitude",
+    "longitude",
+    "distance",
+    "points",
+    "two",
+    "miles",
+    "meters"
+  ],
+  "author": "Matt Fender <mhfender@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhfen/dist-two-points/issues"
+  },
+  "homepage": "https://github.com/mhfen/dist-two-points#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleNameMapper": {
+      "^~/(.*)$": "<rootDir>/$1"
+    }
+  }
+}
